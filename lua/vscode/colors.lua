@@ -5,147 +5,147 @@ colors.get_colors = function()
     if vim.o.background == 'dark' then
         mycolors = {
             vscNone = 'NONE',
-            vscFront = '#D4D4D4',
-            vscBack = '#1F1F1F',
+            vscFront = '#E2E2E2',
+            vscBack = '#263238',  -- Material dark background
 
-            vscTabCurrent = '#1F1F1F',
-            vscTabOther = '#2D2D2D',
-            vscTabOutside = '#252526',
+            vscTabCurrent = '#263238',
+            vscTabOther = '#37474F',
+            vscTabOutside = '#2E3C43',
 
-            vscLeftDark = '#252526',
-            vscLeftMid = '#373737',
-            vscLeftLight = '#636369',
+            vscLeftDark = '#2E3C43',
+            vscLeftMid = '#455A64',
+            vscLeftLight = '#607D8B',
 
-            vscPopupFront = '#BBBBBB',
-            vscPopupBack = '#272727',
-            vscPopupHighlightBlue = '#004b72',
-            vscPopupHighlightGray = '#343B41',
+            vscPopupFront = '#ECEFF1',
+            vscPopupBack = '#37474F',
+            vscPopupHighlightBlue = '#1565C0',
+            vscPopupHighlightGray = '#455A64',
 
-            vscSplitLight = '#898989',
-            vscSplitDark = '#444444',
-            vscSplitThumb = '#424242',
+            vscSplitLight = '#78909C',
+            vscSplitDark = '#546E7A',
+            vscSplitThumb = '#455A64',
 
-            vscCursorDarkDark = '#222222',
-            vscCursorDark = '#51504F',
-            vscCursorLight = '#AEAFAD',
-            vscSelection = '#264F78',
-            vscLineNumber = '#5A5A5A',
+            vscCursorDarkDark = '#2E3C43',
+            vscCursorDark = '#546E7A',
+            vscCursorLight = '#B0BEC5',
+            vscSelection = '#272728',
+            vscLineNumber = '#78909C',
 
-            vscDiffRedDark = '#4B1818',
-            vscDiffRedLight = '#6F1313',
-            vscDiffRedLightLight = '#FB0101',
-            vscDiffGreenDark = '#373D29',
-            vscDiffGreenLight = '#4B5632',
-            vscSearchCurrent = '#515c6a',
-            vscSearch = '#613315',
+            vscDiffRedDark = '#B71C1C',
+            vscDiffRedLight = '#C62828',
+            vscDiffRedLightLight = '#EF5350',
+            vscDiffGreenDark = '#2E7D32',
+            vscDiffGreenLight = '#388E3C',
+            vscSearchCurrent = '#546E7A',
+            vscSearch = '#795548',
 
-            vscGitAdded = '#81b88b',
-            vscGitModified = '#e2c08d',
-            vscGitDeleted = '#c74e39',
-            vscGitRenamed = '#73c991',
-            vscGitUntracked = '#73c991',
-            vscGitIgnored = '#8c8c8c',
-            vscGitStageModified = '#e2c08d',
-            vscGitStageDeleted = '#c74e39',
-            vscGitConflicting = '#e4676b',
-            vscGitSubmodule = '#8db9e2',
+            vscGitAdded = '#81C784',
+            vscGitModified = '#FF9800',  -- More true orange
+            vscGitDeleted = '#E57373',
+            vscGitRenamed = '#4DB6AC',
+            vscGitUntracked = '#4DB6AC',
+            vscGitIgnored = '#90A4AE',
+            vscGitStageModified = '#FF9800',  -- More true orange
+            vscGitStageDeleted = '#E57373',
+            vscGitConflicting = '#FF7043',
+            vscGitSubmodule = '#64B5F6',
 
-            vscContext = '#404040',
-            vscContextCurrent = '#707070',
+            vscContext = '#455A64',
+            vscContextCurrent = '#78909C',
 
-            vscFoldBackground = '#202d39',
+            vscFoldBackground = '#1565C0',
 
             -- Syntax colors
-            vscGray = '#808080',
-            vscViolet = '#646695',
-            vscBlue = '#569CD6',
-            vscAccentBlue = '#4FC1FF',
-            vscDarkBlue = '#223E55',
-            vscMediumBlue = '#18a2fe',
-            vscDisabledBlue = '#729DB3',
-            vscLightBlue = '#9CDCFE',
-            vscGreen = '#6A9955',
+            vscGray = '#90A4AE',
+            vscViolet = '#9575CD',
+            vscBlue = '#64B5F6',
+            vscAccentBlue = '#40C4FF',
+            vscDarkBlue = '#1565C0',
+            vscMediumBlue = '#2196F3',
+            vscDisabledBlue = '#78909C',
+            vscLightBlue = '#81D4FA',
+            vscGreen = '#81C784',
             vscBlueGreen = '#4EC9B0',
-            vscLightGreen = '#B5CEA8',
-            vscRed = '#F44747',
+            vscLightGreen = '#A5D6A7',
+            vscRed = '#EF5350',
+            vscLightRed = '#E57373',
             vscOrange = '#CE9178',
-            vscLightRed = '#D16969',
             vscYellowOrange = '#D7BA7D',
             vscYellow = '#DCDCAA',
             vscDarkYellow = '#FFD602',
             vscPink = '#C586C0',
 
             -- Low contrast with default background
-            vscDimHighlight = '#51504F',
+            vscDimHighlight = '#546E7A',
         }
     else
         mycolors = {
             vscNone = 'NONE',
-            vscFront = '#343434',
-            vscBack = '#FFFFFF',
+            vscFront = '#424242',
+            vscBack = '#FAFAFA',  -- Material light background
 
-            vscTabCurrent = '#FFFFFF',
-            vscTabOther = '#CECECE',
-            vscTabOutside = '#E8E8E8',
+            vscTabCurrent = '#FAFAFA',
+            vscTabOther = '#EEEEEE',
+            vscTabOutside = '#F5F5F5',
 
-            vscLeftDark = '#C4C4C4',
-            vscLeftMid = '#E5E5E5',
-            vscLeftLight = '#F3F3F3',
+            vscLeftDark = '#E0E0E0',
+            vscLeftMid = '#EEEEEE',
+            vscLeftLight = '#F5F5F5',
 
-            vscPopupFront = '#000000',
-            vscPopupBack = '#F3F3F3',
-            vscPopupHighlightBlue = '#0064c1',
-            vscPopupHighlightGray = '#767676',
+            vscPopupFront = '#212121',
+            vscPopupBack = '#F5F5F5',
+            vscPopupHighlightBlue = '#1976D2',
+            vscPopupHighlightGray = '#BDBDBD',
 
-            vscSplitLight = '#EEEEEE',
-            vscSplitDark = '#DDDDDD',
-            vscSplitThumb = '#DFDFDF',
+            vscSplitLight = '#E0E0E0',
+            vscSplitDark = '#BDBDBD',
+            vscSplitThumb = '#9E9E9E',
 
-            vscCursorDarkDark = '#E5EBF1',
-            vscCursorDark = '#6F6F6F',
-            vscCursorLight = '#767676',
-            vscSelection = '#ADD6FF',
-            vscLineNumber = '#098658',
+            vscCursorDarkDark = '#E3F2FD',
+            vscCursorDark = '#757575',
+            vscCursorLight = '#9E9E9E',
+            vscSelection = '#BBDEFB',
+            vscLineNumber = '#2E7D32',
 
-            vscDiffRedDark = '#FFCCCC',
-            vscDiffRedLight = '#FFA3A3',
-            vscDiffRedLightLight = '#FFCCCC',
-            vscDiffGreenDark = '#DBE6C2',
-            vscDiffGreenLight = '#EBF1DD',
-            vscSearchCurrent = '#A8AC94',
-            vscSearch = '#F8C9AB',
+            vscDiffRedDark = '#FFCDD2',
+            vscDiffRedLight = '#EF9A9A',
+            vscDiffRedLightLight = '#FFCDD2',
+            vscDiffGreenDark = '#C8E6C9',
+            vscDiffGreenLight = '#E8F5E9',
+            vscSearchCurrent = '#BCAAA4',
+            vscSearch = '#FFCCBC',
 
-            vscGitAdded = '#587c0c',
-            vscGitModified = '#895503',
-            vscGitDeleted = '#ad0707',
-            vscGitRenamed = '#007100',
-            vscGitUntracked = '#007100',
-            vscGitIgnored = '#8e8e90',
-            vscGitStageModified = '#895503',
-            vscGitStageDeleted = '#ad0707',
-            vscGitConflicting = '#ad0707',
-            vscGitSubmodule = '#1258a7',
+            vscGitAdded = '#43A047',
+            vscGitModified = '#F57C00',  -- More true orange
+            vscGitDeleted = '#E53935',
+            vscGitRenamed = '#00897B',
+            vscGitUntracked = '#00897B',
+            vscGitIgnored = '#757575',
+            vscGitStageModified = '#F57C00',  -- More true orange
+            vscGitStageDeleted = '#E53935',
+            vscGitConflicting = '#E53935',
+            vscGitSubmodule = '#1976D2',
 
-            vscContext = '#D2D2D2',
-            vscContextCurrent = '#929292',
+            vscContext = '#E0E0E0',
+            vscContextCurrent = '#9E9E9E',
 
-            vscFoldBackground = '#e6f3ff',
+            vscFoldBackground = '#E3F2FD',
 
             -- Syntax colors
-            vscGray = '#000000',
-            vscViolet = '#000080',
-            vscBlue = '#0000FF',
-            vscDarkBlue = '#007ACC',
-            vscLightBlue = '#0451A5',
-            vscGreen = '#008000',
-            vscBlueGreen = '#16825D',
-            vscLightGreen = '#098658',
-            vscRed = '#FF0000',
-            vscOrange = '#C72E0F',
-            vscLightRed = '#A31515',
-            vscYellowOrange = '#800000',
-            vscYellow = '#795E26',
-            vscPink = '#AF00DB',
+            vscGray = '#212121',
+            vscViolet = '#303F9F',
+            vscBlue = '#1976D2',
+            vscDarkBlue = '#0288D1',
+            vscLightBlue = '#1565C0',
+            vscGreen = '#388E3C',
+            vscBlueGreen = '#00796B',
+            vscLightGreen = '#2E7D32',
+            vscRed = '#D32F2F',
+            vscOrange = '#F57C00',  -- More true orange
+            vscLightRed = '#C62828',
+            vscYellowOrange = '#E65100',  -- Dark orange
+            vscYellow = '#F57C00',  -- More orange than yellow
+            vscPink = '#8E24AA',  -- More purple-leaning pink
 
             -- Low contrast with default background
             vscDimHighlight = '#B2DFDB',
@@ -153,9 +153,9 @@ colors.get_colors = function()
     end
 
     -- Other ui specific colors
-    mycolors.vscUiBlue = '#084671'
-    mycolors.vscUiOrange = '#f28b25'
-    mycolors.vscPopupHighlightLightBlue = '#d7eafe'
+    mycolors.vscUiBlue = '#1565C0'
+    mycolors.vscUiOrange = '#F57C00'  -- More true orange
+    mycolors.vscPopupHighlightLightBlue = '#E3F2FD'
 
     -- Extend the colors with overrides passed by `color_overrides`
     local config = require('vscode.config')
