@@ -8,16 +8,16 @@ colors.get_colors = function()
             vscFront = '#E2E2E2',
             vscBack = '#263238',  -- Material dark background
 
-            vscTabCurrent = '#263238',
-            vscTabOther = '#37474F',
-            vscTabOutside = '#2E3C43',
+            vscTabCurrent = '#0d0d0d',
+            vscTabOther = '#202020',
+            vscTabOutside = '#202020',
 
             vscLeftDark = '#2E3C43',
             vscLeftMid = '#455A64',
             vscLeftLight = '#607D8B',
 
-            vscPopupFront = '#ECEFF1',
-            vscPopupBack = '#37474F',
+            vscPopupFront = '#222222',
+            vscPopupBack = '#171717',
             vscPopupHighlightBlue = '#1565C0',
             vscPopupHighlightGray = '#455A64',
 
