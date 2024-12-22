@@ -70,9 +70,9 @@ colors.get_colors = function()
             vscRed = '#ff7eb6',           -- Pink
             vscLightRed = '#ff8389',      -- Light pink
             vscOrange = '#ff6f00',        -- Orange
-            vscYellowOrange = '#ff832b',  -- Light orange
-            vscYellow = '#ffab91',        -- Peach
-            vscDarkYellow = '#ff7eb6',    -- Pink
+            vscYellowOrange = '#ffc799',  -- Soft yellow
+            vscYellow = '#ffc799',        -- Soft yellow
+            vscDarkYellow = '#ffd7aa',    -- Slightly darker soft yellow
             vscPink = '#ee5396',          -- Deep pink
 
             -- Low contrast with default background
