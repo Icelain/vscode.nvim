@@ -5,78 +5,78 @@ colors.get_colors = function()
     if vim.o.background == 'dark' then
         mycolors = {
             vscNone = 'NONE',
-            vscFront = '#f2f4f8',  -- Brighter white for better contrast
-            vscBack = '#161616',   -- True black background like Oxocarbon
+            vscFront = '#e0e0e0',  -- Softer white for a relaxed contrast
+            vscBack = '#121212',   -- Slightly lighter than true black
 
-            vscTabCurrent = '#262626',
-            vscTabOther = '#161616',
-            vscTabOutside = '#161616',
+            vscTabCurrent = '#1c1c1c',
+            vscTabOther = '#121212',
+            vscTabOutside = '#121212',
 
-            vscLeftDark = '#262626',
-            vscLeftMid = '#393939',
-            vscLeftLight = '#525252',
+            vscLeftDark = '#1c1c1c',
+            vscLeftMid = '#2c2c2c',
+            vscLeftLight = '#3c3c3c',
 
-            vscPopupFront = '#f2f4f8',
-            vscPopupBack = '#262626',
-            vscPopupHighlightBlue = '#33b1ff',
-            vscPopupHighlightGray = '#393939',
+            vscPopupFront = '#e0e0e0',
+            vscPopupBack = '#1c1c1c',
+            vscPopupHighlightBlue = '#3a73c9',
+            vscPopupHighlightGray = '#2c2c2c',
 
-            vscSplitLight = '#525252',
-            vscSplitDark = '#393939',
-            vscSplitThumb = '#262626',
+            vscSplitLight = '#3c3c3c',
+            vscSplitDark = '#2c2c2c',
+            vscSplitThumb = '#1c1c1c',
 
-            vscCursorDarkDark = '#262626',
-            vscCursorDark = '#393939',
-            vscCursorLight = '#525252',
-            vscSelection = '#264f78',
-            vscLineNumber = '#525252',
+            vscCursorDarkDark = '#1c1c1c',
+            vscCursorDark = '#2c2c2c',
+            vscCursorLight = '#3c3c3c',
+            vscSelection = '#5e3a70',    -- Transparent-like purplish shade
+            vscLineNumber = '#4a4a4a',
 
-            vscDiffRedDark = '#ff4d4d',
-            vscDiffRedLight = '#ff8389',
-            vscDiffRedLightLight = '#fa4b4b',
-            vscDiffGreenDark = '#42be65',
-            vscDiffGreenLight = '#3ddbd9',
-            vscSearchCurrent = '#393939',
-            vscSearch = '#ee5396',
+            vscDiffRedDark = '#d45b5b',  -- Muted red
+            vscDiffRedLight = '#e07a7d',
+            vscDiffRedLightLight = '#dd6666',
+            vscDiffGreenDark = '#6fbf7b',
+            vscDiffGreenLight = '#68d1c1',
+            vscSearchCurrent = '#2c2c2c',
+            vscSearch = '#d16d96',
 
-            vscGitAdded = '#42be65',     -- Oxocarbon green
-            vscGitModified = '#33b1ff',   -- Oxocarbon blue
-            vscGitDeleted = '#ff7eb6',    -- Oxocarbon pink
-            vscGitRenamed = '#be95ff',    -- Oxocarbon purple
-            vscGitUntracked = '#82cfff',  -- Light blue
-            vscGitIgnored = '#525252',    -- Gray
-            vscGitStageModified = '#33b1ff',
-            vscGitStageDeleted = '#ff7eb6',
-            vscGitConflicting = '#ee5396',
-            vscGitSubmodule = '#be95ff',
+            vscGitAdded = '#6fbf7b',
+            vscGitModified = '#3a73c9',
+            vscGitDeleted = '#db6b9c',
+            vscGitRenamed = '#ab89d1',
+            vscGitUntracked = '#68c8e0',
+            vscGitIgnored = '#4a4a4a',
+            vscGitStageModified = '#3a73c9',
+            vscGitStageDeleted = '#db6b9c',
+            vscGitConflicting = '#d16d96',
+            vscGitSubmodule = '#ab89d1',
 
-            vscContext = '#393939',
-            vscContextCurrent = '#525252',
+            vscContext = '#2c2c2c',
+            vscContextCurrent = '#4a4a4a',
 
-            vscFoldBackground = '#33b1ff',
+            vscFoldBackground = '#3a73c9',
 
-            -- Syntax colors inspired by Oxocarbon
-            vscGray = '#525252',
-            vscViolet = '#be95ff',        -- Purple
-            vscBlue = '#33b1ff',          -- Bright blue
-            vscAccentBlue = '#82cfff',    -- Light blue
-            vscDarkBlue = '#0f62fe',      -- Deep blue
-            vscMediumBlue = '#78a9ff',    -- Medium blue
-            vscDisabledBlue = '#525252',  -- Gray
-            vscLightBlue = '#82cfff',     -- Light blue
-            vscGreen = '#42be65',         -- Green
-            vscBlueGreen = '#3ddbd9',     -- Cyan
-            vscLightGreen = '#42be65',    -- Green
-            vscRed = '#ff7eb6',           -- Pink
-            vscLightRed = '#ff8389',      -- Light pink
-            vscOrange = '#ff6f00',        -- Orange
-            vscYellowOrange = '#ffc799',  -- Soft yellow
-            vscYellow = '#ffc799',        -- Soft yellow
-            vscDarkYellow = '#ffd7aa',    -- Slightly darker soft yellow
-            vscPink = '#ee5396',          -- Deep pink
+            -- Syntax colors inspired by Material Design
+            vscGray = '#4a4a4a',
+            vscViolet = '#ab89d1',       
+            vscBlue = '#3a73c9',         
+            vscAccentBlue = '#5f9fdb',   
+            vscDarkBlue = '#34588c',     -- Material-inspired, relaxed dark blue
+            vscMediumBlue = '#5f9fdb',   
+            vscDisabledBlue = '#4a4a4a', 
+            vscLightBlue = '#68c8e0',    
+            vscGreen = '#6fbf7b',        
+            vscBlueGreen = '#68d1c1',    
+            vscLightGreen = '#6fbf7b',   
+            vscRed = '#db6b9c',          
+            vscLightRed = '#e07a7d',     
+            vscOrange = '#e88e3a',       
+            vscYellowOrange = '#ffc799', -- Updated yellow
+            vscYellow = '#ffc799',       -- Updated yellow
+            vscDarkYellow = '#c9a277',   
+            vscPink = '#d16d96',         
 
             -- Low contrast with default background
-            vscDimHighlight = '#393939',
+            vscDimHighlight = '#2c2c2c',
         }
     else
         -- Light theme colors remain unchanged
@@ -86,9 +86,9 @@ colors.get_colors = function()
     end
 
     -- Other ui specific colors
-    mycolors.vscUiBlue = '#33b1ff'       -- Oxocarbon blue
-    mycolors.vscUiOrange = '#ff832b'      -- Bright orange
-    mycolors.vscPopupHighlightLightBlue = '#78a9ff'
+    mycolors.vscUiBlue = '#3a73c9'      
+    mycolors.vscUiOrange = '#e88e3a'   
+    mycolors.vscPopupHighlightLightBlue = '#5f9fdb'
 
     -- Extend the colors with overrides passed by `color_overrides`
     local config = require('vscode.config')

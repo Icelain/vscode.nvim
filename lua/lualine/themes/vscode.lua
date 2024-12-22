@@ -1,20 +1,19 @@
--- Copyright (c) 2020-2021 Mofiqul Islam
--- MIT license, see LICENSE for more details.
+-- Modified Lualine theme with a relaxed, material-inspired palette
 local config = require('vscode.config')
 local vscode = {}
 local colors = {}
 
 if vim.o.background == 'dark' then
-    colors.inactive = '#666666'
-    colors.bg = '#262626'
-    colors.bg2 = '#373737'
-    colors.fg = '#ffffff'
-    colors.red = '#f44747'
-    colors.green = '#4EC9B0'
-    colors.blue = '#0a7aca'
-    colors.lightblue = '#5CB6F8'
-    colors.yellow = '#ffaf00'
-    colors.pink = '#DDB6F2'
+    colors.inactive = '#4a4a4a'
+    colors.bg = '#121212'          -- Relaxed dark background
+    colors.bg2 = '#1c1c1c'         -- Slightly lighter than bg for contrast
+    colors.fg = '#e0e0e0'          -- Softer white for a relaxed feel
+    colors.red = '#db6b9c'         -- Muted pinkish-red
+    colors.green = '#6fbf7b'       -- Relaxed green
+    colors.blue = '#3a73c9'        -- Material-inspired blue
+    colors.lightblue = '#5f9fdb'   -- Softer light blue
+    colors.yellow = '#ffc799'      -- Updated soft yellow
+    colors.pink = '#ab89d1'        -- Relaxed purple
 else
     colors.inactive = '#888888'
     colors.bg = '#F5F5F5'
@@ -35,8 +34,8 @@ vscode.normal = {
 }
 
 vscode.visual = {
-    a = { fg = colors.bg, bg = colors.yellow, gui = 'bold' },
-    b = { fg = colors.yellow, bg = config.opts.transparent and 'NONE' or colors.bg },
+    a = { fg = colors.bg, bg = colors.pink, gui = 'bold' },
+    b = { fg = colors.pink, bg = config.opts.transparent and 'NONE' or colors.bg },
 }
 
 vscode.inactive = {
