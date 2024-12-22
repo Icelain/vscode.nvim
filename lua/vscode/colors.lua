@@ -58,7 +58,7 @@ colors.get_colors = function()
             -- Syntax colors inspired by Material Design
             vscGray = '#4a4a4a',
             vscViolet = '#ab89d1',       
-            vscBlue = '#5f7cde',         
+            vscBlue = '#8392d6',         
             vscAccentBlue = '#5f9fdb',   
             vscDarkBlue = '#3a73c9',     -- Material-inspired, relaxed dark blue
             vscMediumBlue = '#5f9fdb',   
