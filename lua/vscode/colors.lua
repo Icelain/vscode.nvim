@@ -8,7 +8,7 @@ colors.get_colors = function()
             vscFront = '#e0e0e0',  -- Softer white for a relaxed contrast
             vscBack = '#121212',   -- Slightly lighter than true black
 
-            vscTabCurrent = '#1c1c1c',
+            vscTabCurrent = '#202020',
             vscTabOther = '#121212',
             vscTabOutside = '#121212',
 
